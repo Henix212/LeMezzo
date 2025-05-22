@@ -12,10 +12,10 @@
 }
 
 .temp-fullscreen-img {
-    width: 100vw;
-    height: 100vh;
-    max-width: 100vw;
-    max-height: 100vh;
+    width: 120vw;
+    height: 120vh;
+    max-width: 120vw;
+    max-height: 120vh;
     object-fit: cover;
     object-position: center;
     transition: transform 1s cubic-bezier(.77,0,.18,1);
@@ -23,10 +23,22 @@
 }
 
 .splash-hide {
-    transform: translateY(-100vh);
+    animation: splashJump 1s cubic-bezier(.77,0,.18,1) forwards;
 }
 
-/* Responsive adjustments */
+/* Key Frames for a jumping animation */
+@keyframes splashJump {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateY(-110vh);
+    }
+}
+
 @media (max-width: 900px) {
     .temp-fullscreen-img {
         width: 100vw;
