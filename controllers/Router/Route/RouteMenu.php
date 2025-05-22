@@ -17,7 +17,7 @@ class RouteMenu extends Route {
     //  Constructor
     //
     public function __construct(MenuController $menuController) {
-        $this->authController = $menuController;
+        $this->menuController = $menuController;
     }
 
     //
