@@ -1,4 +1,4 @@
-<?php $this->layout('templates') ?>
+<?php $this->layout('templates', ["title" => Config::get("title")])?>
 
 <link rel="stylesheet" href="public/css/menuView.css">
 

@@ -9,7 +9,6 @@
 <body>
     <header>
         <div class="header-flex">
-            <h1><?= $this->e($title)?></h1>
             <nav class="navbar">
                 <!-- Créaion des lien/ boutton clicable qui modifierons l'URL avec une action pour le routeur-->
                 <a class = "le_mezzo_name" href="index.php?action=LeMezzo">Le Mezzo</a>
