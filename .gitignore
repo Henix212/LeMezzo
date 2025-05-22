@@ -1,0 +1,4 @@
+*.sql
+/exemple/
+/models/Bounty.php
+/models/BountyDAO.php
