@@ -1,10 +1,22 @@
-/* Ajoute ce bloc dans ton fichier CSS */
-.temp-fullscreen-img {
+#splash {
     position: fixed;
-    top: 0;
-    left: 0;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.temp-fullscreen-img {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    z-index: -1;
+    transition: transform 1s cubic-bezier(.77,0,.18,1);
+}
+
+.splash-hide {
+    transform: translateY(-100vh);
 }
