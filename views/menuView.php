@@ -1,3 +1,11 @@
+<?php
+
+namespace Views;
+
+use Config\Config;
+
+?>
+
 <?php $this->layout('templates', ["title" => Config::get("title")])?>
 
 <link rel="stylesheet" href="public/css/menuView.css">
